@@ -6,6 +6,9 @@ $allowlistedIPs = array(
     '::1', 
     '192.168.1.3'
 );
+$host = '1.2.3.4'; // Replace with the IP or URL of the receiving device.
+$port = 1234; // Replace with the port of the receiving device.
+
 
 // Get the IP address of the requester
 $requesterIP = $_SERVER['REMOTE_ADDR'];
@@ -24,8 +27,6 @@ $string = isset($matches[1]) ? $matches[1] : '';
 
 // Open a TCP connection to another device
 if (!empty($string)) {
-    $host = '1.2.3.4'; // Replace with the IP or URL of the receiving device.
-    $port = 1234; // Replace with the port of the receiving device.
 
     $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
     if ($socket === false) {
