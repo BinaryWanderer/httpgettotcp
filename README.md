@@ -1,6 +1,7 @@
 # PHP Script Readme
 
-This is a PHP script that allows you to forward a string of text to another device over a TCP connection. It includes an IP allowlist feature to restrict access only to specific IP addresses.
+This is a PHP script that allows you to forward a string of text in an HTTP Request to another device as ASCII over a generic TCP connection.
+It includes an IP allowlist feature to restrict access only to specific IP addresses.
 
 ## Installation
 
@@ -20,6 +21,7 @@ Before using the script, you need to configure the allowlisted IP addresses and 
 ## Usage
 
 Once you have installed and configured the script, you can use it to forward a string of text to the destination device.
+For example requesting it as follows `http://example.com/get_to_tcp.php/ThisStringWillBeSent` would send the string `ThisStringWillBeSent` to the receiving device configured in the php file.
 
 1. Access the PHP script through a web browser or by making an HTTP request to the script's URL.
 2. The script will automatically retrieve the requester's IP address and check if it is allowlisted.
