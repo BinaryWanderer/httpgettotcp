@@ -1,4 +1,4 @@
-# PHP Script Readme
+# README
 
 This is a PHP script that allows you to forward a string of text in an HTTP Request to another device as ASCII over a generic TCP connection.
 It includes an IP allowlist feature to restrict access only to specific IP addresses.
